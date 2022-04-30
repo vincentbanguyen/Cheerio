@@ -7,29 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E19E8791281DD139000D5285 /* CheerioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8781281DD137000D5285 /* CheerioApp.swift */; };
 		E19E8792281DD139000D5285 /* CheerioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8781281DD137000D5285 /* CheerioApp.swift */; };
-		E19E8793281DD139000D5285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8782281DD137000D5285 /* ContentView.swift */; };
-		E19E8794281DD139000D5285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8782281DD137000D5285 /* ContentView.swift */; };
 		E19E8795281DD139000D5285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19E8783281DD139000D5285 /* Assets.xcassets */; };
 		E19E8796281DD139000D5285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19E8783281DD139000D5285 /* Assets.xcassets */; };
-		E19E87A5281DD8C9000D5285 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87A4281DD8C9000D5285 /* TaskListView.swift */; };
-		E19E87A7281DDA10000D5285 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87A6281DDA10000D5285 /* TaskListViewModel.swift */; };
-		E19E87A9281DDA4B000D5285 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87A8281DDA4B000D5285 /* TaskCellViewModel.swift */; };
-		E19E87AB281DDA62000D5285 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87AA281DDA62000D5285 /* TaskModel.swift */; };
+		E19E87F6281DE45F000D5285 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F0281DE45F000D5285 /* TaskListViewModel.swift */; };
+		E19E87F7281DE45F000D5285 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F1281DE45F000D5285 /* TaskCellViewModel.swift */; };
+		E19E87F8281DE45F000D5285 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F3281DE45F000D5285 /* TaskModel.swift */; };
+		E19E87F9281DE45F000D5285 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F5281DE45F000D5285 /* TaskListView.swift */; };
+		E19E8802281DE46E000D5285 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */; };
+		E19E8803281DE46E000D5285 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */; };
+		E19E8804281DE46E000D5285 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FF281DE46E000D5285 /* TaskModel.swift */; };
+		E19E8805281DE46E000D5285 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8801281DE46E000D5285 /* TaskListView.swift */; };
+		E19E8807281DE49B000D5285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8806281DE49B000D5285 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E19E8781281DD137000D5285 /* CheerioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerioApp.swift; sourceTree = "<group>"; };
-		E19E8782281DD137000D5285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E19E8783281DD139000D5285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E19E8788281DD139000D5285 /* Cheerio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheerio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19E878E281DD139000D5285 /* Cheerio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheerio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19E8790281DD139000D5285 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		E19E87A4281DD8C9000D5285 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
-		E19E87A6281DDA10000D5285 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
-		E19E87A8281DDA4B000D5285 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
-		E19E87AA281DDA62000D5285 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		E19E87B1281DE1AF000D5285 /* Cheerio--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cheerio--macOS--Info.plist"; sourceTree = "<group>"; };
+		E19E87F0281DE45F000D5285 /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		E19E87F1281DE45F000D5285 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		E19E87F3281DE45F000D5285 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		E19E87F5281DE45F000D5285 /* TaskListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		E19E87FF281DE46E000D5285 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		E19E8801281DE46E000D5285 /* TaskListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		E19E8806281DE49B000D5285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +60,9 @@
 		E19E877B281DD136000D5285 = {
 			isa = PBXGroup;
 			children = (
+				E19E87B1281DE1AF000D5285 /* Cheerio--macOS--Info.plist */,
 				E19E8780281DD137000D5285 /* Shared */,
+				E19E87B0281DE153000D5285 /* iOS */,
 				E19E878F281DD139000D5285 /* macOS */,
 				E19E8789281DD139000D5285 /* Products */,
 			);
@@ -62,9 +71,6 @@
 		E19E8780281DD137000D5285 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E19E8781281DD137000D5285 /* CheerioApp.swift */,
-				E19E8782281DD137000D5285 /* ContentView.swift */,
-				E19E879F281DD80E000D5285 /* Tasks */,
 				E19E8783281DD139000D5285 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -82,42 +88,88 @@
 		E19E878F281DD139000D5285 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				E19E87FA281DE46E000D5285 /* Tasks */,
+				E19E8781281DD137000D5285 /* CheerioApp.swift */,
 				E19E8790281DD139000D5285 /* macOS.entitlements */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		E19E879F281DD80E000D5285 /* Tasks */ = {
+		E19E87B0281DE153000D5285 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E19E87A1281DD81E000D5285 /* ViewModels */,
-				E19E87A0281DD816000D5285 /* Models */,
-				E19E87A3281DD82C000D5285 /* Views */,
+				E19E87EE281DE45F000D5285 /* Tasks */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		E19E87EE281DE45F000D5285 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				E19E87EF281DE45F000D5285 /* ViewModels */,
+				E19E87F2281DE45F000D5285 /* Models */,
+				E19E87F4281DE45F000D5285 /* Views */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
 		};
-		E19E87A0281DD816000D5285 /* Models */ = {
+		E19E87EF281DE45F000D5285 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E19E87AA281DDA62000D5285 /* TaskModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E19E87A1281DD81E000D5285 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				E19E87A6281DDA10000D5285 /* TaskListViewModel.swift */,
-				E19E87A8281DDA4B000D5285 /* TaskCellViewModel.swift */,
+				E19E87F0281DE45F000D5285 /* TaskListViewModel.swift */,
+				E19E87F1281DE45F000D5285 /* TaskCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		E19E87A3281DD82C000D5285 /* Views */ = {
+		E19E87F2281DE45F000D5285 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E19E87A4281DD8C9000D5285 /* TaskListView.swift */,
+				E19E87F3281DE45F000D5285 /* TaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E19E87F4281DE45F000D5285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E19E87F5281DE45F000D5285 /* TaskListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E19E87FA281DE46E000D5285 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				E19E87FB281DE46E000D5285 /* ViewModels */,
+				E19E87FE281DE46E000D5285 /* Models */,
+				E19E8800281DE46E000D5285 /* Views */,
+				E19E8806281DE49B000D5285 /* ContentView.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		E19E87FB281DE46E000D5285 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */,
+				E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E19E87FE281DE46E000D5285 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E19E87FF281DE46E000D5285 /* TaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E19E8800281DE46E000D5285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E19E8801281DE46E000D5285 /* TaskListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,12 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19E87AB281DDA62000D5285 /* TaskModel.swift in Sources */,
-				E19E8793281DD139000D5285 /* ContentView.swift in Sources */,
-				E19E87A7281DDA10000D5285 /* TaskListViewModel.swift in Sources */,
-				E19E8791281DD139000D5285 /* CheerioApp.swift in Sources */,
-				E19E87A5281DD8C9000D5285 /* TaskListView.swift in Sources */,
-				E19E87A9281DDA4B000D5285 /* TaskCellViewModel.swift in Sources */,
+				E19E87F8281DE45F000D5285 /* TaskModel.swift in Sources */,
+				E19E87F6281DE45F000D5285 /* TaskListViewModel.swift in Sources */,
+				E19E87F7281DE45F000D5285 /* TaskCellViewModel.swift in Sources */,
+				E19E87F9281DE45F000D5285 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19E8794281DD139000D5285 /* ContentView.swift in Sources */,
+				E19E8803281DE46E000D5285 /* TaskCellViewModel.swift in Sources */,
 				E19E8792281DD139000D5285 /* CheerioApp.swift in Sources */,
+				E19E8807281DE49B000D5285 /* ContentView.swift in Sources */,
+				E19E8805281DE46E000D5285 /* TaskListView.swift in Sources */,
+				E19E8804281DE46E000D5285 /* TaskModel.swift in Sources */,
+				E19E8802281DE46E000D5285 /* TaskListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +478,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cheerio--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +507,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cheerio--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

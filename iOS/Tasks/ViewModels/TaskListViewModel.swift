@@ -1,6 +1,5 @@
 import Foundation
 import Combine
-import AppKit
 
 class TaskListViewModel: ObservableObject {
     @Published var taskCellViewModels = [TaskCellViewModel]()

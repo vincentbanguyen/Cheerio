@@ -20,6 +20,7 @@ struct TaskListView: View {
     }
     func onCommit() -> Void {
         print("commited")
+        
         NSApplication.shared.sendAction(#selector(NSResponder.resignFirstResponder), to: nil, from: nil)
         addNewTask.toggle()
         self.taskListVM.addTask(task: Task(title: text, completed: false))
@@ -45,10 +46,6 @@ struct TaskCell: View {
             TextField("Edit Task", text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task) // when commit, update task
             })
-        }
-        .onTapGesture {
-            self.taskCellVM.task.completed = true
-            print("removing task")
         }
     }
 }

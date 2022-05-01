@@ -1,14 +1,7 @@
 import Foundation
-
-struct Task: Identifiable {
-    var id = UUID().uuidString
+import CloudKit
+struct Task {
+    var recordId : CKRecord.ID?
     var title: String
-    var completed: Bool
+    var completed: String
 }
-
-let testDataTasks = [
-    Task(title: "test 1", completed: false),
-    Task(title: "test 2", completed: false),
-    Task(title: "test 3", completed: false),
-    Task(title: "test 4", completed: false)
-]

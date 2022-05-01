@@ -10,15 +10,56 @@
 		E19E8792281DD139000D5285 /* CheerioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8781281DD137000D5285 /* CheerioApp.swift */; };
 		E19E8795281DD139000D5285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19E8783281DD139000D5285 /* Assets.xcassets */; };
 		E19E8796281DD139000D5285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19E8783281DD139000D5285 /* Assets.xcassets */; };
-		E19E87F6281DE45F000D5285 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F0281DE45F000D5285 /* TaskListViewModel.swift */; };
-		E19E87F7281DE45F000D5285 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F1281DE45F000D5285 /* TaskCellViewModel.swift */; };
-		E19E87F8281DE45F000D5285 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F3281DE45F000D5285 /* TaskModel.swift */; };
 		E19E87F9281DE45F000D5285 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87F5281DE45F000D5285 /* TaskListView.swift */; };
 		E19E8802281DE46E000D5285 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */; };
 		E19E8803281DE46E000D5285 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */; };
 		E19E8804281DE46E000D5285 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FF281DE46E000D5285 /* TaskModel.swift */; };
 		E19E8805281DE46E000D5285 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8801281DE46E000D5285 /* TaskListView.swift */; };
 		E19E8807281DE49B000D5285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8806281DE49B000D5285 /* ContentView.swift */; };
+		E19E8809281DE584000D5285 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8808281DE584000D5285 /* LottieView.swift */; };
+		E19E880C281DE5A1000D5285 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E19E880B281DE5A1000D5285 /* Lottie */; };
+		E19E881C281DE5EC000D5285 /* Head_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E880F281DE5EC000D5285 /* Head_dog.ai */; };
+		E19E881D281DE5EC000D5285 /* Head_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E880F281DE5EC000D5285 /* Head_dog.ai */; };
+		E19E881E281DE5EC000D5285 /* EarL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8810281DE5EC000D5285 /* EarL_dog.ai */; };
+		E19E881F281DE5EC000D5285 /* EarL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8810281DE5EC000D5285 /* EarL_dog.ai */; };
+		E19E8820281DE5EC000D5285 /* Tail_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8811281DE5EC000D5285 /* Tail_dog.ai */; };
+		E19E8821281DE5EC000D5285 /* Tail_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8811281DE5EC000D5285 /* Tail_dog.ai */; };
+		E19E8822281DE5EC000D5285 /* EyeL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8812281DE5EC000D5285 /* EyeL_dog.ai */; };
+		E19E8823281DE5EC000D5285 /* EyeL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8812281DE5EC000D5285 /* EyeL_dog.ai */; };
+		E19E8824281DE5EC000D5285 /* Mouth_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8813281DE5EC000D5285 /* Mouth_dog.ai */; };
+		E19E8825281DE5EC000D5285 /* Mouth_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8813281DE5EC000D5285 /* Mouth_dog.ai */; };
+		E19E8826281DE5EC000D5285 /* EarR_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8814281DE5EC000D5285 /* EarR_dog.ai */; };
+		E19E8827281DE5EC000D5285 /* EarR_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8814281DE5EC000D5285 /* EarR_dog.ai */; };
+		E19E8828281DE5EC000D5285 /* Body_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8815281DE5EC000D5285 /* Body_dog.ai */; };
+		E19E8829281DE5EC000D5285 /* Body_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8815281DE5EC000D5285 /* Body_dog.ai */; };
+		E19E882A281DE5EC000D5285 /* EyeR_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8816281DE5EC000D5285 /* EyeR_dog.ai */; };
+		E19E882B281DE5EC000D5285 /* EyeR_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8816281DE5EC000D5285 /* EyeR_dog.ai */; };
+		E19E882C281DE5EC000D5285 /* LegL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8817281DE5EC000D5285 /* LegL_dog.ai */; };
+		E19E882D281DE5EC000D5285 /* LegL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8817281DE5EC000D5285 /* LegL_dog.ai */; };
+		E19E882E281DE5EC000D5285 /* PawR_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8818281DE5EC000D5285 /* PawR_dog.ai */; };
+		E19E882F281DE5EC000D5285 /* PawR_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8818281DE5EC000D5285 /* PawR_dog.ai */; };
+		E19E8830281DE5EC000D5285 /* Fluff_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8819281DE5EC000D5285 /* Fluff_dog.ai */; };
+		E19E8831281DE5EC000D5285 /* Fluff_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E8819281DE5EC000D5285 /* Fluff_dog.ai */; };
+		E19E8832281DE5EC000D5285 /* PawL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E881A281DE5EC000D5285 /* PawL_dog.ai */; };
+		E19E8833281DE5EC000D5285 /* PawL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E881A281DE5EC000D5285 /* PawL_dog.ai */; };
+		E19E8834281DE5EC000D5285 /* dog_idle.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E881B281DE5EC000D5285 /* dog_idle.json */; };
+		E19E8835281DE5EC000D5285 /* dog_idle.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E881B281DE5EC000D5285 /* dog_idle.json */; };
+		E19E8838281DE6BB000D5285 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E19E8837281DE6BB000D5285 /* Background.png */; };
+		E19E8839281DE6BB000D5285 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E19E8837281DE6BB000D5285 /* Background.png */; };
+		E19E886C281DE7B2000D5285 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E19E886B281DE7B2000D5285 /* Lottie */; };
+		E19E887E281DE80D000D5285 /* dog_eating.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E886E281DE80D000D5285 /* dog_eating.json */; };
+		E19E887F281DE80D000D5285 /* dog_eating.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E886E281DE80D000D5285 /* dog_eating.json */; };
+		E19E8896281DE80D000D5285 /* Cheerio_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E887B281DE80D000D5285 /* Cheerio_dog.ai */; };
+		E19E8897281DE80D000D5285 /* Cheerio_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E887B281DE80D000D5285 /* Cheerio_dog.ai */; };
+		E19E889D281DE873000D5285 /* Tounge_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E889C281DE873000D5285 /* Tounge_dog.ai */; };
+		E19E889E281DE873000D5285 /* Tounge_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E889C281DE873000D5285 /* Tounge_dog.ai */; };
+		E19E88A2281DE8E2000D5285 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E88A1281DE8E2000D5285 /* LottieView.swift */; };
+		E1CD8201281DEA15005EE084 /* CheerioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8200281DEA15005EE084 /* CheerioApp.swift */; };
+		E1CD8203281DEA35005EE084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD8202281DEA35005EE084 /* ContentView.swift */; };
+		E1CD8206281DEA65005EE084 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CD8205281DEA65005EE084 /* CloudKit.framework */; };
+		E1CD8207281E0503005EE084 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */; };
+		E1CD8208281E050B005EE084 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */; };
+		E1CD8209281E050F005EE084 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E87FF281DE46E000D5285 /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,15 +69,35 @@
 		E19E878E281DD139000D5285 /* Cheerio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheerio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19E8790281DD139000D5285 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E19E87B1281DE1AF000D5285 /* Cheerio--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cheerio--macOS--Info.plist"; sourceTree = "<group>"; };
-		E19E87F0281DE45F000D5285 /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
-		E19E87F1281DE45F000D5285 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
-		E19E87F3281DE45F000D5285 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		E19E87F5281DE45F000D5285 /* TaskListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		E19E87FF281DE46E000D5285 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		E19E8801281DE46E000D5285 /* TaskListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		E19E8806281DE49B000D5285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E19E8808281DE584000D5285 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E19E880F281DE5EC000D5285 /* Head_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Head_dog.ai; sourceTree = "<group>"; };
+		E19E8810281DE5EC000D5285 /* EarL_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = EarL_dog.ai; sourceTree = "<group>"; };
+		E19E8811281DE5EC000D5285 /* Tail_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tail_dog.ai; sourceTree = "<group>"; };
+		E19E8812281DE5EC000D5285 /* EyeL_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = EyeL_dog.ai; sourceTree = "<group>"; };
+		E19E8813281DE5EC000D5285 /* Mouth_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mouth_dog.ai; sourceTree = "<group>"; };
+		E19E8814281DE5EC000D5285 /* EarR_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = EarR_dog.ai; sourceTree = "<group>"; };
+		E19E8815281DE5EC000D5285 /* Body_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Body_dog.ai; sourceTree = "<group>"; };
+		E19E8816281DE5EC000D5285 /* EyeR_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = EyeR_dog.ai; sourceTree = "<group>"; };
+		E19E8817281DE5EC000D5285 /* LegL_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = LegL_dog.ai; sourceTree = "<group>"; };
+		E19E8818281DE5EC000D5285 /* PawR_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = PawR_dog.ai; sourceTree = "<group>"; };
+		E19E8819281DE5EC000D5285 /* Fluff_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fluff_dog.ai; sourceTree = "<group>"; };
+		E19E881A281DE5EC000D5285 /* PawL_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = PawL_dog.ai; sourceTree = "<group>"; };
+		E19E881B281DE5EC000D5285 /* dog_idle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_idle.json; sourceTree = "<group>"; };
+		E19E8837281DE6BB000D5285 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		E19E8869281DE794000D5285 /* Cheerio--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Cheerio--iOS--Info.plist"; sourceTree = "<group>"; };
+		E19E886E281DE80D000D5285 /* dog_eating.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_eating.json; sourceTree = "<group>"; };
+		E19E887B281DE80D000D5285 /* Cheerio_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cheerio_dog.ai; sourceTree = "<group>"; };
+		E19E889C281DE873000D5285 /* Tounge_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tounge_dog.ai; sourceTree = "<group>"; };
+		E19E88A1281DE8E2000D5285 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E1CD8200281DEA15005EE084 /* CheerioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerioApp.swift; sourceTree = "<group>"; };
+		E1CD8202281DEA35005EE084 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1CD8205281DEA65005EE084 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19E886C281DE7B2000D5285 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19E880C281DE5A1000D5285 /* Lottie in Frameworks */,
+				E1CD8206281DEA65005EE084 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,18 +124,23 @@
 		E19E877B281DD136000D5285 = {
 			isa = PBXGroup;
 			children = (
+				E19E8869281DE794000D5285 /* Cheerio--iOS--Info.plist */,
 				E19E87B1281DE1AF000D5285 /* Cheerio--macOS--Info.plist */,
 				E19E8780281DD137000D5285 /* Shared */,
 				E19E87B0281DE153000D5285 /* iOS */,
 				E19E878F281DD139000D5285 /* macOS */,
 				E19E8789281DD139000D5285 /* Products */,
+				E1CD8204281DEA65005EE084 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		E19E8780281DD137000D5285 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */,
 				E19E8783281DD139000D5285 /* Assets.xcassets */,
+				E19E8837281DE6BB000D5285 /* Background.png */,
+				E19E880D281DE5EC000D5285 /* dogAnimations */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +157,7 @@
 		E19E878F281DD139000D5285 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				E19E88A4281DE8EC000D5285 /* Views */,
 				E19E87FA281DE46E000D5285 /* Tasks */,
 				E19E8781281DD137000D5285 /* CheerioApp.swift */,
 				E19E8790281DD139000D5285 /* macOS.entitlements */,
@@ -98,7 +168,9 @@
 		E19E87B0281DE153000D5285 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E19E88A0281DE8D3000D5285 /* Views */,
 				E19E87EE281DE45F000D5285 /* Tasks */,
+				E1CD8200281DEA15005EE084 /* CheerioApp.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -106,28 +178,9 @@
 		E19E87EE281DE45F000D5285 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				E19E87EF281DE45F000D5285 /* ViewModels */,
-				E19E87F2281DE45F000D5285 /* Models */,
 				E19E87F4281DE45F000D5285 /* Views */,
 			);
 			path = Tasks;
-			sourceTree = "<group>";
-		};
-		E19E87EF281DE45F000D5285 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				E19E87F0281DE45F000D5285 /* TaskListViewModel.swift */,
-				E19E87F1281DE45F000D5285 /* TaskCellViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		E19E87F2281DE45F000D5285 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E19E87F3281DE45F000D5285 /* TaskModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		E19E87F4281DE45F000D5285 /* Views */ = {
@@ -144,7 +197,6 @@
 				E19E87FB281DE46E000D5285 /* ViewModels */,
 				E19E87FE281DE46E000D5285 /* Models */,
 				E19E8800281DE46E000D5285 /* Views */,
-				E19E8806281DE49B000D5285 /* ContentView.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -152,7 +204,6 @@
 		E19E87FB281DE46E000D5285 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */,
 				E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */,
 			);
 			path = ViewModels;
@@ -174,6 +225,63 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E19E880D281DE5EC000D5285 /* dogAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				E19E880E281DE5EC000D5285 /* images */,
+				E19E881B281DE5EC000D5285 /* dog_idle.json */,
+				E19E886E281DE80D000D5285 /* dog_eating.json */,
+			);
+			path = dogAnimations;
+			sourceTree = "<group>";
+		};
+		E19E880E281DE5EC000D5285 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E19E880F281DE5EC000D5285 /* Head_dog.ai */,
+				E19E889C281DE873000D5285 /* Tounge_dog.ai */,
+				E19E887B281DE80D000D5285 /* Cheerio_dog.ai */,
+				E19E8810281DE5EC000D5285 /* EarL_dog.ai */,
+				E19E8811281DE5EC000D5285 /* Tail_dog.ai */,
+				E19E8812281DE5EC000D5285 /* EyeL_dog.ai */,
+				E19E8813281DE5EC000D5285 /* Mouth_dog.ai */,
+				E19E8814281DE5EC000D5285 /* EarR_dog.ai */,
+				E19E8815281DE5EC000D5285 /* Body_dog.ai */,
+				E19E8816281DE5EC000D5285 /* EyeR_dog.ai */,
+				E19E8817281DE5EC000D5285 /* LegL_dog.ai */,
+				E19E8818281DE5EC000D5285 /* PawR_dog.ai */,
+				E19E8819281DE5EC000D5285 /* Fluff_dog.ai */,
+				E19E881A281DE5EC000D5285 /* PawL_dog.ai */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E19E88A0281DE8D3000D5285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E19E88A1281DE8E2000D5285 /* LottieView.swift */,
+				E1CD8202281DEA35005EE084 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E19E88A4281DE8EC000D5285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E19E8806281DE49B000D5285 /* ContentView.swift */,
+				E19E8808281DE584000D5285 /* LottieView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1CD8204281DEA65005EE084 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD8205281DEA65005EE084 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +298,9 @@
 			dependencies = (
 			);
 			name = "Cheerio (iOS)";
+			packageProductDependencies = (
+				E19E886B281DE7B2000D5285 /* Lottie */,
+			);
 			productName = "Cheerio (iOS)";
 			productReference = E19E8788281DD139000D5285 /* Cheerio.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +318,9 @@
 			dependencies = (
 			);
 			name = "Cheerio (macOS)";
+			packageProductDependencies = (
+				E19E880B281DE5A1000D5285 /* Lottie */,
+			);
 			productName = "Cheerio (macOS)";
 			productReference = E19E878E281DD139000D5285 /* Cheerio.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +352,10 @@
 				Base,
 			);
 			mainGroup = E19E877B281DD136000D5285;
+			packageReferences = (
+				E19E880A281DE5A1000D5285 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E19E886A281DE7B2000D5285 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = E19E8789281DD139000D5285 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,6 +371,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19E8826281DE5EC000D5285 /* EarR_dog.ai in Resources */,
+				E19E882A281DE5EC000D5285 /* EyeR_dog.ai in Resources */,
+				E19E889D281DE873000D5285 /* Tounge_dog.ai in Resources */,
+				E19E8834281DE5EC000D5285 /* dog_idle.json in Resources */,
+				E19E882E281DE5EC000D5285 /* PawR_dog.ai in Resources */,
+				E19E8822281DE5EC000D5285 /* EyeL_dog.ai in Resources */,
+				E19E8896281DE80D000D5285 /* Cheerio_dog.ai in Resources */,
+				E19E8832281DE5EC000D5285 /* PawL_dog.ai in Resources */,
+				E19E8828281DE5EC000D5285 /* Body_dog.ai in Resources */,
+				E19E881C281DE5EC000D5285 /* Head_dog.ai in Resources */,
+				E19E887E281DE80D000D5285 /* dog_eating.json in Resources */,
+				E19E8824281DE5EC000D5285 /* Mouth_dog.ai in Resources */,
+				E19E882C281DE5EC000D5285 /* LegL_dog.ai in Resources */,
+				E19E8830281DE5EC000D5285 /* Fluff_dog.ai in Resources */,
+				E19E8838281DE6BB000D5285 /* Background.png in Resources */,
+				E19E881E281DE5EC000D5285 /* EarL_dog.ai in Resources */,
+				E19E8820281DE5EC000D5285 /* Tail_dog.ai in Resources */,
 				E19E8795281DD139000D5285 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +396,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19E8827281DE5EC000D5285 /* EarR_dog.ai in Resources */,
+				E19E882B281DE5EC000D5285 /* EyeR_dog.ai in Resources */,
+				E19E889E281DE873000D5285 /* Tounge_dog.ai in Resources */,
+				E19E8835281DE5EC000D5285 /* dog_idle.json in Resources */,
+				E19E882F281DE5EC000D5285 /* PawR_dog.ai in Resources */,
+				E19E8823281DE5EC000D5285 /* EyeL_dog.ai in Resources */,
+				E19E8897281DE80D000D5285 /* Cheerio_dog.ai in Resources */,
+				E19E8833281DE5EC000D5285 /* PawL_dog.ai in Resources */,
+				E19E8829281DE5EC000D5285 /* Body_dog.ai in Resources */,
+				E19E881D281DE5EC000D5285 /* Head_dog.ai in Resources */,
+				E19E887F281DE80D000D5285 /* dog_eating.json in Resources */,
+				E19E8825281DE5EC000D5285 /* Mouth_dog.ai in Resources */,
+				E19E882D281DE5EC000D5285 /* LegL_dog.ai in Resources */,
+				E19E8831281DE5EC000D5285 /* Fluff_dog.ai in Resources */,
+				E19E8839281DE6BB000D5285 /* Background.png in Resources */,
+				E19E881F281DE5EC000D5285 /* EarL_dog.ai in Resources */,
+				E19E8821281DE5EC000D5285 /* Tail_dog.ai in Resources */,
 				E19E8796281DD139000D5285 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +424,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19E87F8281DE45F000D5285 /* TaskModel.swift in Sources */,
-				E19E87F6281DE45F000D5285 /* TaskListViewModel.swift in Sources */,
-				E19E87F7281DE45F000D5285 /* TaskCellViewModel.swift in Sources */,
+				E1CD8209281E050F005EE084 /* TaskModel.swift in Sources */,
+				E1CD8203281DEA35005EE084 /* ContentView.swift in Sources */,
 				E19E87F9281DE45F000D5285 /* TaskListView.swift in Sources */,
+				E1CD8207281E0503005EE084 /* TaskListViewModel.swift in Sources */,
+				E1CD8208281E050B005EE084 /* TaskCellViewModel.swift in Sources */,
+				E19E88A2281DE8E2000D5285 /* LottieView.swift in Sources */,
+				E1CD8201281DEA15005EE084 /* CheerioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +442,7 @@
 				E19E8792281DD139000D5285 /* CheerioApp.swift in Sources */,
 				E19E8807281DE49B000D5285 /* ContentView.swift in Sources */,
 				E19E8805281DE46E000D5285 /* TaskListView.swift in Sources */,
+				E19E8809281DE584000D5285 /* LottieView.swift in Sources */,
 				E19E8804281DE46E000D5285 /* TaskModel.swift in Sources */,
 				E19E8802281DE46E000D5285 /* TaskListViewModel.swift in Sources */,
 			);
@@ -414,6 +570,7 @@
 				DEVELOPMENT_TEAM = 6B3Z2889MZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cheerio--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,6 +601,7 @@
 				DEVELOPMENT_TEAM = 6B3Z2889MZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cheerio--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -554,6 +712,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E19E880A281DE5A1000D5285 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E19E886A281DE7B2000D5285 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E19E880B281DE5A1000D5285 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19E880A281DE5A1000D5285 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		E19E886B281DE7B2000D5285 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19E880A281DE5A1000D5285 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E19E877C281DD136000D5285 /* Project object */;
 }

@@ -11,19 +11,19 @@ struct TaskListView: View {
             TextField("Add a task", text: $text, onCommit: onCommit)
             List {
                 ForEach(taskListVM.taskCellViewModels) { taskCellVM in
-                    if taskCellVM.task.completed == false {
-                        TaskCell(taskCellVM: taskCellVM)
-                    }
+                    TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM)
                 }
             }
         }
     }
     func onCommit() -> Void {
-        print("commited")
         
-        addNewTask.toggle()
-        self.taskListVM.addTask(task: Task(title: text, completed: false))
-        text = ""
+//        addNewTask.toggle()
+////        if !text.isEmpty {
+//            print("adding task: \(task)")
+//            self.taskListVM.addTask(task: Task(title: text, completed: false))
+//            text = "hii"
+//      //  }
       }
     
 }
@@ -37,18 +37,22 @@ struct TaskListView_Previews: PreviewProvider {
 
 struct TaskCell: View {
     @ObservedObject var taskCellVM: TaskCellViewModel
+    @ObservedObject var taskListVM: TaskListViewModel
     var onCommit: (Task) -> (Void) = { _ in }
     var body: some View {
         HStack {
             Image(systemName: "smallcircle.fill.circle.fill")
                 .foregroundColor(.yellow)
+                .onTapGesture {
+                    print("attempt to delete")
+                    taskListVM.deleteTask(task: taskCellVM.task)
+                    taskListVM.fetchTasks()
+                    
+                }
             TextField("Edit Task", text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task) // when commit, update task
             })
         }
-        .onTapGesture {
-            self.taskCellVM.task.completed = true
-            print("removing task")
-        }
+        
     }
 }

@@ -20,12 +20,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: 30)
         if let MenuButton = statusItem?.button {
             MenuButton.image = NSImage(systemSymbolName: "chart.line.uptrend.xyaxis.circle",
-                                       accessibilityDescription: "P.E.T.")
+                                       accessibilityDescription: "Cheerio")
             MenuButton.action = #selector(MenuButtonToggle)
         }
         
         self.popOver = NSPopover()
-        self.popOver.contentSize = NSSize(width: 300, height: 300)
+        self.popOver.contentSize = NSSize(width: 300, height: 500)
         self.popOver.behavior = .transient
         self.popOver.contentViewController = NSHostingController(rootView: ContentView())
     }

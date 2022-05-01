@@ -3,7 +3,7 @@ import SwiftUI
 struct TaskListView: View {
     @ObservedObject var taskListVM = TaskListViewModel()
     
-    let tasks = testDataTasks // for testing/debugging
+  
     @State var text = ""
     @State var addNewTask = false
     var body: some View {
@@ -11,21 +11,22 @@ struct TaskListView: View {
             TextField("Add a task", text: $text, onCommit: onCommit)
             List {
                 ForEach(taskListVM.taskCellViewModels) { taskCellVM in
-                    if taskCellVM.task.completed == false {
-                        TaskCell(taskCellVM: taskCellVM)
-                    }
+                    TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM)
                 }
             }
         }
     }
+    
     func onCommit() -> Void {
-        print("commited")
         
-        NSApplication.shared.sendAction(#selector(NSResponder.resignFirstResponder), to: nil, from: nil)
-        addNewTask.toggle()
-        self.taskListVM.addTask(task: Task(title: text, completed: false))
-        text = ""
-      }
+        if !text.isEmpty {
+            print("adding tasK: \(text)")
+            NSApplication.shared.sendAction(#selector(NSResponder.resignFirstResponder), to: nil, from: nil)
+            addNewTask.toggle()
+            self.taskListVM.addTask(task: Task(title: text, completed: "false"))
+            text = ""
+        }
+    }
     
 }
 
@@ -38,14 +39,22 @@ struct TaskListView_Previews: PreviewProvider {
 
 struct TaskCell: View {
     @ObservedObject var taskCellVM: TaskCellViewModel
+    @ObservedObject var taskListVM: TaskListViewModel
     var onCommit: (Task) -> (Void) = { _ in }
     var body: some View {
         HStack {
             Image(systemName: "smallcircle.fill.circle.fill")
                 .foregroundColor(.yellow)
+                .onTapGesture {
+                    print("attempt to delete")
+                    taskListVM.deleteTask(task: taskCellVM.task)
+                    taskListVM.fetchTasks()
+                    
+                }
             TextField("Edit Task", text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task) // when commit, update task
             })
         }
+        
     }
 }

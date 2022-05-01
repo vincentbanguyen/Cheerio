@@ -6,6 +6,7 @@ struct TaskListView: View {
     @State var text = ""
     @State var addNewTask = false
     @Binding var completedTasks: String
+    
     var body: some View {
         
         VStack {
@@ -21,22 +22,24 @@ struct TaskListView: View {
                         taskListVM.fetchTasks()
                     }
             }
-            
-            VStack(alignment: .leading, spacing: 10) {
-                List {
-                    ForEach(taskListVM.taskCellViewModels) { taskCellVM in
-                        TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask, completedTasks: $completedTasks)
-                            .foregroundColor(.white)
-                    }
+            List {
+                ForEach(taskListVM.taskCellViewModels) { taskCellVM in
+                    TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask, completedTasks: $completedTasks)
+                        .foregroundColor(.white)
+                        .padding(.bottom, 10)
+                        .padding(.top, 10)
                 }
-                .cornerRadius(20)
             }
+            .cornerRadius(20)
+            
         }
         .onAppear {
+            UITableView.appearance().backgroundColor = UIColor(Color(hex: "2b2b2e"))
             print("fetching tasks")
             taskListVM.fetchTasks()
         }
-}
+        
+    }
     
     func onCommit() -> Void {
         if !text.isEmpty {
@@ -65,7 +68,7 @@ struct TaskCell: View {
                     print("removing task")
                     taskListVM.deleteTask(task: taskCellVM.task)
                     let storedCompletedTasks = keyValStore.string(forKey: "completedTasks") ?? "0"
-                   
+                    
                     let newNum = Int(storedCompletedTasks)! + 1
                     keyValStore.set(String(newNum), forKey: "completedTasks")
                     completedTasks = String(newNum)

@@ -6,6 +6,9 @@ struct ContentView: View {
     
     @State var completedTask = false
     @State var completedTasks = "0"
+    @State private var FX: [DotFX] = []
+    @State var isTapped = false
+    @State var didFlip = false
     
     var body: some View {
         VStack {
@@ -45,12 +48,37 @@ struct ContentView: View {
                     .scaleEffect(0.135)
                     .frame(width: 100, height: 100)
                     .aspectRatio(contentMode: .fit)
-                if !completedTask {
+                
+                ForEach(FX) { dot in
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 30))
+                        .foregroundColor(.red)
+                        .frame(width: 30, height: 30)
+                        .modifier(ParticlesModifier())
+                }
+                
+                if isTapped == true {
+                    LottieView(name: "dog_happy", loopMode: .loop)
+                        .loop)
+                            .scaleEffect(0.135)
+                            .frame(width: 100, height: 100)
+                            .aspectRatio(contentMode: .fit)
+                } else if completedTasks == "3" && didFlip == false {
+                    LottieView(name: "dog_flip", loopMode: .loop)
+                        .loop)
+                            .scaleEffect(0.135)
+                            .frame(width: 100, height: 100)
+                            .aspectRatio(contentMode: .fit)
+                    let _ = didFlip = true
+                   
+                }
+                
+                else if completedTask == false {
                     LottieView(name: "dog_idle", loopMode: .loop)
                         .scaleEffect(0.135)
                         .frame(width: 100, height: 100)
                         .aspectRatio(contentMode: .fit)
-                } else {
+                } else if completedTask == true {
                     LottieView(name: "dog_eating", loopMode: .loop)
                         .scaleEffect(0.135)
                         .frame(width: 100, height: 100)
@@ -59,6 +87,13 @@ struct ContentView: View {
                 
             }
             .padding(.bottom, 45)
+            .onTapGesture {
+                addDotFX()
+                isTapped = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    isTapped = false
+                }
+            }
             
             TaskListView(completedTask: $completedTask, completedTasks: $completedTasks)
                 .padding()
@@ -66,6 +101,12 @@ struct ContentView: View {
         .padding(.top, 10)
         .onAppear {
             completedTasks = keyValStore.string(forKey: "completedTasks") ?? "0"
+        }
+    }
+    func addDotFX() {
+        self.FX.append(DotFX())
+        if FX.count > 5 {
+            FX.removeFirst()
         }
     }
     

@@ -28,8 +28,8 @@ class TaskListViewModel: ObservableObject {
                 return
             }
             
-            DispatchQueue.main.async { [self] in
-                self!.taskCellViewModels = []
+            DispatchQueue.main.async {
+                self?.taskCellViewModels = []
             }
             
             for task in records {

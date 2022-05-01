@@ -25,10 +25,6 @@ struct TaskListView: View {
             }
             .cornerRadius(20)
         }
-        .onAppear {
-            print("fetching tasks")
-            taskListVM.fetchTasks()
-        }
     }
     
     func onCommit() -> Void {

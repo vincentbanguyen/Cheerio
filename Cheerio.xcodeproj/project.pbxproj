@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E104939C281E54ED00632F31 /* ParticleFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104939B281E54ED00632F31 /* ParticleFX.swift */; };
+		E104939D281E54ED00632F31 /* ParticleFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E104939B281E54ED00632F31 /* ParticleFX.swift */; };
+		E104939F281E609900632F31 /* dog_flip.json in Resources */ = {isa = PBXBuildFile; fileRef = E104939E281E609800632F31 /* dog_flip.json */; };
+		E10493A0281E609900632F31 /* dog_flip.json in Resources */ = {isa = PBXBuildFile; fileRef = E104939E281E609800632F31 /* dog_flip.json */; };
+		E10493A2281E60A900632F31 /* dog_happy.json in Resources */ = {isa = PBXBuildFile; fileRef = E10493A1281E60A900632F31 /* dog_happy.json */; };
+		E10493A3281E60A900632F31 /* dog_happy.json in Resources */ = {isa = PBXBuildFile; fileRef = E10493A1281E60A900632F31 /* dog_happy.json */; };
+		E13BB617281E661E00DC527C /* img_8.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60A281E661D00DC527C /* img_8.png */; };
+		E13BB618281E661E00DC527C /* img_8.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60A281E661D00DC527C /* img_8.png */; };
+		E13BB619281E661E00DC527C /* img_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60B281E661D00DC527C /* img_5.png */; };
+		E13BB61A281E661E00DC527C /* img_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60B281E661D00DC527C /* img_5.png */; };
+		E13BB61B281E661E00DC527C /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60C281E661D00DC527C /* img_1.png */; };
+		E13BB61C281E661E00DC527C /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60C281E661D00DC527C /* img_1.png */; };
+		E13BB61D281E661E00DC527C /* img_4.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60D281E661D00DC527C /* img_4.png */; };
+		E13BB61E281E661E00DC527C /* img_4.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60D281E661D00DC527C /* img_4.png */; };
+		E13BB61F281E661E00DC527C /* img_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60E281E661D00DC527C /* img_6.png */; };
+		E13BB620281E661E00DC527C /* img_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60E281E661D00DC527C /* img_6.png */; };
+		E13BB621281E661E00DC527C /* img_11.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60F281E661D00DC527C /* img_11.png */; };
+		E13BB622281E661E00DC527C /* img_11.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB60F281E661D00DC527C /* img_11.png */; };
+		E13BB623281E661E00DC527C /* img_10.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB610281E661D00DC527C /* img_10.png */; };
+		E13BB624281E661E00DC527C /* img_10.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB610281E661D00DC527C /* img_10.png */; };
+		E13BB625281E661E00DC527C /* img_7.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB611281E661D00DC527C /* img_7.png */; };
+		E13BB626281E661E00DC527C /* img_7.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB611281E661D00DC527C /* img_7.png */; };
+		E13BB627281E661E00DC527C /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB612281E661D00DC527C /* img_0.png */; };
+		E13BB628281E661E00DC527C /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB612281E661D00DC527C /* img_0.png */; };
+		E13BB629281E661E00DC527C /* img_9.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB613281E661D00DC527C /* img_9.png */; };
+		E13BB62A281E661E00DC527C /* img_9.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB613281E661D00DC527C /* img_9.png */; };
+		E13BB62B281E661E00DC527C /* img_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB614281E661E00DC527C /* img_3.png */; };
+		E13BB62C281E661E00DC527C /* img_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB614281E661E00DC527C /* img_3.png */; };
+		E13BB62D281E661E00DC527C /* img_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB615281E661E00DC527C /* img_2.png */; };
+		E13BB62E281E661E00DC527C /* img_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB615281E661E00DC527C /* img_2.png */; };
+		E13BB62F281E661E00DC527C /* img_12.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB616281E661E00DC527C /* img_12.png */; };
+		E13BB630281E661E00DC527C /* img_12.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BB616281E661E00DC527C /* img_12.png */; };
 		E15415E8281E2A680014D797 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15415E7281E2A680014D797 /* CloudKit.framework */; };
 		E15415EA281E2AA30014D797 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15415E9281E2AA30014D797 /* Extensions.swift */; };
 		E15415EB281E2AA30014D797 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15415E9281E2AA30014D797 /* Extensions.swift */; };
@@ -64,6 +96,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E104939B281E54ED00632F31 /* ParticleFX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleFX.swift; sourceTree = "<group>"; };
+		E104939E281E609800632F31 /* dog_flip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_flip.json; sourceTree = "<group>"; };
+		E10493A1281E60A900632F31 /* dog_happy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_happy.json; sourceTree = "<group>"; };
+		E13BB60A281E661D00DC527C /* img_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_8.png; sourceTree = "<group>"; };
+		E13BB60B281E661D00DC527C /* img_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_5.png; sourceTree = "<group>"; };
+		E13BB60C281E661D00DC527C /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		E13BB60D281E661D00DC527C /* img_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_4.png; sourceTree = "<group>"; };
+		E13BB60E281E661D00DC527C /* img_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_6.png; sourceTree = "<group>"; };
+		E13BB60F281E661D00DC527C /* img_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_11.png; sourceTree = "<group>"; };
+		E13BB610281E661D00DC527C /* img_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_10.png; sourceTree = "<group>"; };
+		E13BB611281E661D00DC527C /* img_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_7.png; sourceTree = "<group>"; };
+		E13BB612281E661D00DC527C /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		E13BB613281E661D00DC527C /* img_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_9.png; sourceTree = "<group>"; };
+		E13BB614281E661E00DC527C /* img_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_3.png; sourceTree = "<group>"; };
+		E13BB615281E661E00DC527C /* img_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_2.png; sourceTree = "<group>"; };
+		E13BB616281E661E00DC527C /* img_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_12.png; sourceTree = "<group>"; };
 		E15415E6281E2A640014D797 /* Cheerio (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Cheerio (iOS).entitlements"; sourceTree = "<group>"; };
 		E15415E7281E2A680014D797 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		E15415E9281E2AA30014D797 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -145,6 +193,7 @@
 				E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */,
 				E19E87FF281DE46E000D5285 /* TaskModel.swift */,
 				E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */,
+				E104939B281E54ED00632F31 /* ParticleFX.swift */,
 				E19E8783281DD139000D5285 /* Assets.xcassets */,
 				E19E880D281DE5EC000D5285 /* dogAnimations */,
 				E15415E9281E2AA30014D797 /* Extensions.swift */,
@@ -202,6 +251,8 @@
 			children = (
 				E19E880E281DE5EC000D5285 /* images */,
 				E19E881B281DE5EC000D5285 /* dog_idle.json */,
+				E10493A1281E60A900632F31 /* dog_happy.json */,
+				E104939E281E609800632F31 /* dog_flip.json */,
 				E19E886E281DE80D000D5285 /* dog_eating.json */,
 			);
 			path = dogAnimations;
@@ -212,6 +263,19 @@
 			children = (
 				E19E880F281DE5EC000D5285 /* Head_dog.ai */,
 				E19E889C281DE873000D5285 /* Tounge_dog.ai */,
+				E13BB612281E661D00DC527C /* img_0.png */,
+				E13BB60C281E661D00DC527C /* img_1.png */,
+				E13BB615281E661E00DC527C /* img_2.png */,
+				E13BB614281E661E00DC527C /* img_3.png */,
+				E13BB60D281E661D00DC527C /* img_4.png */,
+				E13BB60B281E661D00DC527C /* img_5.png */,
+				E13BB60E281E661D00DC527C /* img_6.png */,
+				E13BB611281E661D00DC527C /* img_7.png */,
+				E13BB60A281E661D00DC527C /* img_8.png */,
+				E13BB613281E661D00DC527C /* img_9.png */,
+				E13BB610281E661D00DC527C /* img_10.png */,
+				E13BB60F281E661D00DC527C /* img_11.png */,
+				E13BB616281E661E00DC527C /* img_12.png */,
 				E19E887B281DE80D000D5285 /* Cheerio_dog.ai */,
 				E19E8810281DE5EC000D5285 /* EarL_dog.ai */,
 				E19E8811281DE5EC000D5285 /* Tail_dog.ai */,
@@ -346,22 +410,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19E8826281DE5EC000D5285 /* EarR_dog.ai in Resources */,
+				E13BB61B281E661E00DC527C /* img_1.png in Resources */,
+				E13BB623281E661E00DC527C /* img_10.png in Resources */,
+				E13BB62D281E661E00DC527C /* img_2.png in Resources */,
+				E13BB61D281E661E00DC527C /* img_4.png in Resources */,
 				E19E882A281DE5EC000D5285 /* EyeR_dog.ai in Resources */,
+				E13BB619281E661E00DC527C /* img_5.png in Resources */,
 				E19E889D281DE873000D5285 /* Tounge_dog.ai in Resources */,
 				E19E8834281DE5EC000D5285 /* dog_idle.json in Resources */,
+				E13BB617281E661E00DC527C /* img_8.png in Resources */,
 				E19E882E281DE5EC000D5285 /* PawR_dog.ai in Resources */,
 				E19E8822281DE5EC000D5285 /* EyeL_dog.ai in Resources */,
 				E19E8896281DE80D000D5285 /* Cheerio_dog.ai in Resources */,
 				E19E8832281DE5EC000D5285 /* PawL_dog.ai in Resources */,
 				E19E8828281DE5EC000D5285 /* Body_dog.ai in Resources */,
 				E19E881C281DE5EC000D5285 /* Head_dog.ai in Resources */,
+				E13BB61F281E661E00DC527C /* img_6.png in Resources */,
 				E19E887E281DE80D000D5285 /* dog_eating.json in Resources */,
+				E13BB625281E661E00DC527C /* img_7.png in Resources */,
+				E13BB621281E661E00DC527C /* img_11.png in Resources */,
 				E19E8824281DE5EC000D5285 /* Mouth_dog.ai in Resources */,
 				E19E882C281DE5EC000D5285 /* LegL_dog.ai in Resources */,
+				E10493A2281E60A900632F31 /* dog_happy.json in Resources */,
 				E19E8830281DE5EC000D5285 /* Fluff_dog.ai in Resources */,
 				E19E881E281DE5EC000D5285 /* EarL_dog.ai in Resources */,
+				E13BB627281E661E00DC527C /* img_0.png in Resources */,
+				E104939F281E609900632F31 /* dog_flip.json in Resources */,
 				E19E8820281DE5EC000D5285 /* Tail_dog.ai in Resources */,
+				E13BB62F281E661E00DC527C /* img_12.png in Resources */,
+				E13BB629281E661E00DC527C /* img_9.png in Resources */,
 				E19E8795281DD139000D5285 /* Assets.xcassets in Resources */,
+				E13BB62B281E661E00DC527C /* img_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,22 +449,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19E8827281DE5EC000D5285 /* EarR_dog.ai in Resources */,
+				E13BB61C281E661E00DC527C /* img_1.png in Resources */,
+				E13BB624281E661E00DC527C /* img_10.png in Resources */,
+				E13BB62E281E661E00DC527C /* img_2.png in Resources */,
+				E13BB61E281E661E00DC527C /* img_4.png in Resources */,
 				E19E882B281DE5EC000D5285 /* EyeR_dog.ai in Resources */,
+				E13BB61A281E661E00DC527C /* img_5.png in Resources */,
 				E19E889E281DE873000D5285 /* Tounge_dog.ai in Resources */,
 				E19E8835281DE5EC000D5285 /* dog_idle.json in Resources */,
+				E13BB618281E661E00DC527C /* img_8.png in Resources */,
 				E19E882F281DE5EC000D5285 /* PawR_dog.ai in Resources */,
 				E19E8823281DE5EC000D5285 /* EyeL_dog.ai in Resources */,
 				E19E8897281DE80D000D5285 /* Cheerio_dog.ai in Resources */,
 				E19E8833281DE5EC000D5285 /* PawL_dog.ai in Resources */,
 				E19E8829281DE5EC000D5285 /* Body_dog.ai in Resources */,
 				E19E881D281DE5EC000D5285 /* Head_dog.ai in Resources */,
+				E13BB620281E661E00DC527C /* img_6.png in Resources */,
 				E19E887F281DE80D000D5285 /* dog_eating.json in Resources */,
+				E13BB626281E661E00DC527C /* img_7.png in Resources */,
+				E13BB622281E661E00DC527C /* img_11.png in Resources */,
 				E19E8825281DE5EC000D5285 /* Mouth_dog.ai in Resources */,
 				E19E882D281DE5EC000D5285 /* LegL_dog.ai in Resources */,
+				E10493A3281E60A900632F31 /* dog_happy.json in Resources */,
 				E19E8831281DE5EC000D5285 /* Fluff_dog.ai in Resources */,
 				E19E881F281DE5EC000D5285 /* EarL_dog.ai in Resources */,
+				E13BB628281E661E00DC527C /* img_0.png in Resources */,
+				E10493A0281E609900632F31 /* dog_flip.json in Resources */,
 				E19E8821281DE5EC000D5285 /* Tail_dog.ai in Resources */,
+				E13BB630281E661E00DC527C /* img_12.png in Resources */,
+				E13BB62A281E661E00DC527C /* img_9.png in Resources */,
 				E19E8796281DD139000D5285 /* Assets.xcassets in Resources */,
+				E13BB62C281E661E00DC527C /* img_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +492,7 @@
 			files = (
 				E1CD8209281E050F005EE084 /* TaskModel.swift in Sources */,
 				E1CD8203281DEA35005EE084 /* ContentView.swift in Sources */,
+				E104939C281E54ED00632F31 /* ParticleFX.swift in Sources */,
 				E19E87F9281DE45F000D5285 /* TaskListView.swift in Sources */,
 				E15415EA281E2AA30014D797 /* Extensions.swift in Sources */,
 				E1CD8207281E0503005EE084 /* TaskListViewModel.swift in Sources */,
@@ -413,6 +508,7 @@
 			files = (
 				E19E8803281DE46E000D5285 /* TaskCellViewModel.swift in Sources */,
 				E19E8792281DD139000D5285 /* CheerioApp.swift in Sources */,
+				E104939D281E54ED00632F31 /* ParticleFX.swift in Sources */,
 				E19E8807281DE49B000D5285 /* ContentView.swift in Sources */,
 				E15415EB281E2AA30014D797 /* Extensions.swift in Sources */,
 				E19E8805281DE46E000D5285 /* TaskListView.swift in Sources */,

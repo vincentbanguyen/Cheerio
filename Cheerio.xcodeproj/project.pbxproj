@@ -138,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				E19E87FC281DE46E000D5285 /* TaskListViewModel.swift */,
+				E19E87FF281DE46E000D5285 /* TaskModel.swift */,
+				E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */,
 				E19E8783281DD139000D5285 /* Assets.xcassets */,
 				E19E8837281DE6BB000D5285 /* Background.png */,
 				E19E880D281DE5EC000D5285 /* dogAnimations */,
@@ -158,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				E19E88A4281DE8EC000D5285 /* Views */,
-				E19E87FA281DE46E000D5285 /* Tasks */,
 				E19E8781281DD137000D5285 /* CheerioApp.swift */,
 				E19E8790281DD139000D5285 /* macOS.entitlements */,
 			);
@@ -187,40 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				E19E87F5281DE45F000D5285 /* TaskListView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		E19E87FA281DE46E000D5285 /* Tasks */ = {
-			isa = PBXGroup;
-			children = (
-				E19E87FB281DE46E000D5285 /* ViewModels */,
-				E19E87FE281DE46E000D5285 /* Models */,
-				E19E8800281DE46E000D5285 /* Views */,
-			);
-			path = Tasks;
-			sourceTree = "<group>";
-		};
-		E19E87FB281DE46E000D5285 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		E19E87FE281DE46E000D5285 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E19E87FF281DE46E000D5285 /* TaskModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E19E8800281DE46E000D5285 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E19E8801281DE46E000D5285 /* TaskListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,6 +237,7 @@
 			children = (
 				E19E8806281DE49B000D5285 /* ContentView.swift */,
 				E19E8808281DE584000D5285 /* LottieView.swift */,
+				E19E8801281DE46E000D5285 /* TaskListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

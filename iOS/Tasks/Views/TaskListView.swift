@@ -7,28 +7,34 @@ struct TaskListView: View {
     @State var addNewTask = false
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 10) {
+        VStack {
             HStack {
-            TextField("Add a task", text: $text, onCommit: onCommit)
+                TextField("Add a task", text: $text, onCommit: onCommit)
+                    .frame(width: 300, height: 40)
+                    .accentColor(.yellow)
+                    .font(.system(size: 30, weight: .regular, design: .rounded))
                 Image(systemName: "arrow.clockwise")
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.system(size: 30, weight: .semibold))
                     .onTapGesture {
                         taskListVM.fetchTasks()
                     }
             }
-            List {
-                ForEach(taskListVM.taskCellViewModels) { taskCellVM in
-                    TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask)
-                        .foregroundColor(completedTask ? .gray : .white)
+            
+            VStack(alignment: .leading, spacing: 10) {
+                List {
+                    ForEach(taskListVM.taskCellViewModels) { taskCellVM in
+                        TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask)
+                            .foregroundColor(.white)
+                    }
                 }
+                .cornerRadius(20)
             }
-            .cornerRadius(20)
         }
         .onAppear {
             print("fetching tasks")
             taskListVM.fetchTasks()
         }
-    }
+}
     
     func onCommit() -> Void {
         if !text.isEmpty {
@@ -69,10 +75,11 @@ struct TaskCell: View {
                         completedTask = false
                     }
                 }
+            
             TextField("Edit Task", text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task) // when commit, update task
             })
-            .font(.system(size: 15, weight: .medium, design: .rounded))
+            .font(.system(size: 30, weight: .medium, design: .rounded))
         }
     }
 }

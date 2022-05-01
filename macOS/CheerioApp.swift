@@ -17,8 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @MainActor func applicationDidFinishLaunching (_ notification: Notification) {
     
         
-        statusItem = NSStatusBar.system.statusItem(withLength: 30)
-      //  statusItem.
+        statusItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
+    
         if let MenuButton = statusItem?.button {
             let image = NSImage(named: "dog")
             image!.size = NSSize(width: 20, height: 20)

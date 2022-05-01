@@ -10,20 +10,16 @@ class TaskListViewModel: ObservableObject {
     
     init() {
         fetchTasks()
-        
     }
     
-    
     func deleteTask(task: Task) {
-        print(task)
         database.delete(withRecordID: task.recordId!) { [self] recordID, error in
-            print("deleted \(task)")
             fetchTasks()
+          
         }
     }
     func fetchTasks() {
         
-        print("fetchin tasks")
         let query = CKQuery(recordType: "TaskItem",
                              predicate: NSPredicate(value: true))
         database.perform(query, inZoneWith: nil) { [weak self] records, error in
@@ -55,13 +51,13 @@ class TaskListViewModel: ObservableObject {
     
     func addTask(task: Task) {
         let taskVM = TaskCellViewModel(task: task)
-        let record = CKRecord (recordType: "TaskItem")
+        let record = CKRecord(recordType: "TaskItem")
         record.setValue("false", forKey: "completed")
         record.setValue(task.title, forKey: "title")
         database.save(record) { record, error in
             if record != nil, error == nil {
                 print("saved task")
-                DispatchQueue.main.async {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     print("adding to vm")
                     self.taskCellViewModels.insert(taskVM, at: 0)
                 }

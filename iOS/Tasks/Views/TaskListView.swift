@@ -5,6 +5,7 @@ struct TaskListView: View {
     @Binding var completedTask: Bool
     @State var text = ""
     @State var addNewTask = false
+    @Binding var completedTasks: String
     var body: some View {
         
         VStack {
@@ -13,6 +14,7 @@ struct TaskListView: View {
                     .frame(width: 300, height: 40)
                     .accentColor(.yellow)
                     .font(.system(size: 30, weight: .regular, design: .rounded))
+                
                 Image(systemName: "arrow.clockwise")
                     .font(.system(size: 30, weight: .semibold))
                     .onTapGesture {
@@ -23,7 +25,7 @@ struct TaskListView: View {
             VStack(alignment: .leading, spacing: 10) {
                 List {
                     ForEach(taskListVM.taskCellViewModels) { taskCellVM in
-                        TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask)
+                        TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask, completedTasks: $completedTasks)
                             .foregroundColor(.white)
                     }
                 }
@@ -47,19 +49,12 @@ struct TaskListView: View {
     
 }
 
-struct TaskListView_Previews: PreviewProvider {
-    @State static var completedTask = false
-    static var previews: some View {
-        TaskListView(completedTask: $completedTask)
-    }
-}
-
-
 struct TaskCell: View {
     
     @ObservedObject var taskCellVM: TaskCellViewModel
     @ObservedObject var taskListVM: TaskListViewModel
     @Binding var completedTask: Bool
+    @Binding var completedTasks: String
     
     var onCommit: (Task) -> (Void) = { _ in }
     var body: some View {
@@ -67,9 +62,15 @@ struct TaskCell: View {
             Image(systemName: completedTask ? "smallcircle.fill.circle.fill" : "circle")
                 .foregroundColor(completedTask ? .yellow : .white)
                 .onTapGesture {
-                    print("attempt to delete")
+                    print("removing task")
                     taskListVM.deleteTask(task: taskCellVM.task)
-                    taskListVM.fetchTasks()
+                    let storedCompletedTasks = keyValStore.string(forKey: "completedTasks") ?? "0"
+                   
+                    let newNum = Int(storedCompletedTasks)! + 1
+                    keyValStore.set(String(newNum), forKey: "completedTasks")
+                    completedTasks = String(newNum)
+                    print("num completed tasks: \(completedTasks)")
+                    keyValStore.synchronize()
                     completedTask = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         completedTask = false
@@ -79,7 +80,7 @@ struct TaskCell: View {
             TextField("Edit Task", text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task) // when commit, update task
             })
-            .font(.system(size: 30, weight: .medium, design: .rounded))
+            .font(.system(size: 20, weight: .medium, design: .rounded))
         }
     }
 }

@@ -6,16 +6,28 @@ struct TaskListView: View {
     @State var text = ""
     @State var addNewTask = false
     var body: some View {
-       
+        
         VStack(alignment: .leading, spacing: 10) {
-                TextField("Add a task", text: $text, onCommit: onCommit)
-                List {
-                    ForEach(taskListVM.taskCellViewModels) { taskCellVM in
-                        TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask)
+            HStack {
+            TextField("Add a task", text: $text, onCommit: onCommit)
+                Image(systemName: "arrow.clockwise")
+                    .font(.system(size: 15, weight: .semibold))
+                    .onTapGesture {
+                        taskListVM.fetchTasks()
                     }
-                }
-                .cornerRadius(20)
             }
+            List {
+                ForEach(taskListVM.taskCellViewModels) { taskCellVM in
+                    TaskCell(taskCellVM: taskCellVM, taskListVM: taskListVM, completedTask: $completedTask)
+                        .foregroundColor(completedTask ? .gray : .white)
+                }
+            }
+            .cornerRadius(20)
+        }
+        .onAppear {
+            print("fetching tasks")
+            taskListVM.fetchTasks()
+        }
     }
     
     func onCommit() -> Void {
@@ -47,8 +59,8 @@ struct TaskCell: View {
     var onCommit: (Task) -> (Void) = { _ in }
     var body: some View {
         HStack {
-            Image(systemName: "smallcircle.fill.circle.fill")
-                .foregroundColor(.yellow)
+            Image(systemName: completedTask ? "smallcircle.fill.circle.fill" : "circle")
+                .foregroundColor(completedTask ? .yellow : .white)
                 .onTapGesture {
                     print("attempt to delete")
                     taskListVM.deleteTask(task: taskCellVM.task)

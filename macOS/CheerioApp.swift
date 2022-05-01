@@ -18,6 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
         
         statusItem = NSStatusBar.system.statusItem(withLength: 30)
+      //  statusItem.
         if let MenuButton = statusItem?.button {
             let image = NSImage(named: "dog")
             image!.size = NSSize(width: 20, height: 20)

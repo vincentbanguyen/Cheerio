@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E15415E8281E2A680014D797 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15415E7281E2A680014D797 /* CloudKit.framework */; };
+		E15415EA281E2AA30014D797 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15415E9281E2AA30014D797 /* Extensions.swift */; };
+		E15415EB281E2AA30014D797 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15415E9281E2AA30014D797 /* Extensions.swift */; };
 		E19E8792281DD139000D5285 /* CheerioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E8781281DD137000D5285 /* CheerioApp.swift */; };
 		E19E8795281DD139000D5285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19E8783281DD139000D5285 /* Assets.xcassets */; };
 		E19E8796281DD139000D5285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19E8783281DD139000D5285 /* Assets.xcassets */; };
@@ -44,8 +47,6 @@
 		E19E8833281DE5EC000D5285 /* PawL_dog.ai in Resources */ = {isa = PBXBuildFile; fileRef = E19E881A281DE5EC000D5285 /* PawL_dog.ai */; };
 		E19E8834281DE5EC000D5285 /* dog_idle.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E881B281DE5EC000D5285 /* dog_idle.json */; };
 		E19E8835281DE5EC000D5285 /* dog_idle.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E881B281DE5EC000D5285 /* dog_idle.json */; };
-		E19E8838281DE6BB000D5285 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E19E8837281DE6BB000D5285 /* Background.png */; };
-		E19E8839281DE6BB000D5285 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E19E8837281DE6BB000D5285 /* Background.png */; };
 		E19E886C281DE7B2000D5285 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E19E886B281DE7B2000D5285 /* Lottie */; };
 		E19E887E281DE80D000D5285 /* dog_eating.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E886E281DE80D000D5285 /* dog_eating.json */; };
 		E19E887F281DE80D000D5285 /* dog_eating.json in Resources */ = {isa = PBXBuildFile; fileRef = E19E886E281DE80D000D5285 /* dog_eating.json */; };
@@ -63,6 +64,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E15415E6281E2A640014D797 /* Cheerio (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Cheerio (iOS).entitlements"; sourceTree = "<group>"; };
+		E15415E7281E2A680014D797 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		E15415E9281E2AA30014D797 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E19E8781281DD137000D5285 /* CheerioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerioApp.swift; sourceTree = "<group>"; };
 		E19E8783281DD139000D5285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E19E8788281DD139000D5285 /* Cheerio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheerio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +93,6 @@
 		E19E8819281DE5EC000D5285 /* Fluff_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fluff_dog.ai; sourceTree = "<group>"; };
 		E19E881A281DE5EC000D5285 /* PawL_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = PawL_dog.ai; sourceTree = "<group>"; };
 		E19E881B281DE5EC000D5285 /* dog_idle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_idle.json; sourceTree = "<group>"; };
-		E19E8837281DE6BB000D5285 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		E19E8869281DE794000D5285 /* Cheerio--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Cheerio--iOS--Info.plist"; sourceTree = "<group>"; };
 		E19E886E281DE80D000D5285 /* dog_eating.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dog_eating.json; sourceTree = "<group>"; };
 		E19E887B281DE80D000D5285 /* Cheerio_dog.ai */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cheerio_dog.ai; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19E886C281DE7B2000D5285 /* Lottie in Frameworks */,
+				E15415E8281E2A680014D797 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,7 @@
 		E19E877B281DD136000D5285 = {
 			isa = PBXGroup;
 			children = (
+				E15415E6281E2A640014D797 /* Cheerio (iOS).entitlements */,
 				E19E8869281DE794000D5285 /* Cheerio--iOS--Info.plist */,
 				E19E87B1281DE1AF000D5285 /* Cheerio--macOS--Info.plist */,
 				E19E8780281DD137000D5285 /* Shared */,
@@ -141,8 +146,8 @@
 				E19E87FF281DE46E000D5285 /* TaskModel.swift */,
 				E19E87FD281DE46E000D5285 /* TaskCellViewModel.swift */,
 				E19E8783281DD139000D5285 /* Assets.xcassets */,
-				E19E8837281DE6BB000D5285 /* Background.png */,
 				E19E880D281DE5EC000D5285 /* dogAnimations */,
+				E15415E9281E2AA30014D797 /* Extensions.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 		E1CD8204281DEA65005EE084 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E15415E7281E2A680014D797 /* CloudKit.framework */,
 				E1CD8205281DEA65005EE084 /* CloudKit.framework */,
 			);
 			name = Frameworks;
@@ -353,7 +359,6 @@
 				E19E8824281DE5EC000D5285 /* Mouth_dog.ai in Resources */,
 				E19E882C281DE5EC000D5285 /* LegL_dog.ai in Resources */,
 				E19E8830281DE5EC000D5285 /* Fluff_dog.ai in Resources */,
-				E19E8838281DE6BB000D5285 /* Background.png in Resources */,
 				E19E881E281DE5EC000D5285 /* EarL_dog.ai in Resources */,
 				E19E8820281DE5EC000D5285 /* Tail_dog.ai in Resources */,
 				E19E8795281DD139000D5285 /* Assets.xcassets in Resources */,
@@ -378,7 +383,6 @@
 				E19E8825281DE5EC000D5285 /* Mouth_dog.ai in Resources */,
 				E19E882D281DE5EC000D5285 /* LegL_dog.ai in Resources */,
 				E19E8831281DE5EC000D5285 /* Fluff_dog.ai in Resources */,
-				E19E8839281DE6BB000D5285 /* Background.png in Resources */,
 				E19E881F281DE5EC000D5285 /* EarL_dog.ai in Resources */,
 				E19E8821281DE5EC000D5285 /* Tail_dog.ai in Resources */,
 				E19E8796281DD139000D5285 /* Assets.xcassets in Resources */,
@@ -395,6 +399,7 @@
 				E1CD8209281E050F005EE084 /* TaskModel.swift in Sources */,
 				E1CD8203281DEA35005EE084 /* ContentView.swift in Sources */,
 				E19E87F9281DE45F000D5285 /* TaskListView.swift in Sources */,
+				E15415EA281E2AA30014D797 /* Extensions.swift in Sources */,
 				E1CD8207281E0503005EE084 /* TaskListViewModel.swift in Sources */,
 				E1CD8208281E050B005EE084 /* TaskCellViewModel.swift in Sources */,
 				E19E88A2281DE8E2000D5285 /* LottieView.swift in Sources */,
@@ -409,6 +414,7 @@
 				E19E8803281DE46E000D5285 /* TaskCellViewModel.swift in Sources */,
 				E19E8792281DD139000D5285 /* CheerioApp.swift in Sources */,
 				E19E8807281DE49B000D5285 /* ContentView.swift in Sources */,
+				E15415EB281E2AA30014D797 /* Extensions.swift in Sources */,
 				E19E8805281DE46E000D5285 /* TaskListView.swift in Sources */,
 				E19E8809281DE584000D5285 /* LottieView.swift in Sources */,
 				E19E8804281DE46E000D5285 /* TaskModel.swift in Sources */,
@@ -533,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cheerio (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6B3Z2889MZ;
@@ -564,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Cheerio (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6B3Z2889MZ;

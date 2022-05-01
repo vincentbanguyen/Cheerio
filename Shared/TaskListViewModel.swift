@@ -55,15 +55,19 @@ class TaskListViewModel: ObservableObject {
     
     func addTask(task: Task) {
         let taskVM = TaskCellViewModel(task: task)
-        self.taskCellViewModels.insert(taskVM, at: 0)
         let record = CKRecord (recordType: "TaskItem")
         record.setValue("false", forKey: "completed")
         record.setValue(task.title, forKey: "title")
         database.save(record) { record, error in
             if record != nil, error == nil {
                 print("saved task")
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                DispatchQueue.main.async {
+                    print("adding to vm")
+                    self.taskCellViewModels.insert(taskVM, at: 0)
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     self.fetchTasks()
+                  
                 }
             }
         }

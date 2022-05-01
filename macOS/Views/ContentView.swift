@@ -69,7 +69,11 @@ struct ContentView: View {
                             .scaleEffect(0.135)
                             .frame(width: 100, height: 100)
                             .aspectRatio(contentMode: .fit)
-                    let _ = didFlip = true
+                            .onAppear {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                    didFlip = true
+                                }
+                            }
                    
                 }
                 
